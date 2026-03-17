@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" id="username" placeholder="Имя">
+        <input type="password" id="key" placeholder="Секретный код">
+        
+        <div id="chat-window" style="height: 300px; border: 1px solid #ccc; overflow-y: auto;"></div>
+
+        <input type="text" id="msg-input" placeholder="Сообщение...">
+        <button onclick="send()">➤</button>
+    </div>
+    <script src="./src/main.js" type="module"></script>
+</body>
+</html>
+
+<div class="main-container">
+    <div class="sidebar">
+        <div class="sidebar-header">Чаты</div>
+        <div id="contacts-list">
+            </div>
+    </div>
+
+    <div class="chat-main">
+        <div class="settings-bar">
+            <input type="text" id="username" placeholder="Ваше имя">
+            <input type="password" id="key" placeholder="Ключ шифрования">
+        </div>
+        <div id="chat-window"></div>
+        <div class="input-area">
+            <input type="text" id="msg-input" placeholder="Сообщение...">
+            <button onclick="send()">➤</button>
+        </div>
+    </div>
+</div>
